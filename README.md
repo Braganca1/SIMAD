@@ -1,6 +1,6 @@
 # Fila de Requisições em um Servidor Web — Simulação M/M/1
 
-Trabalho de Simulação e Análise de Desempenho (SIMAD) — Instituto Militar de Engenharia (IME), 2026.
+Trabalho de Simulação e Análise de Desempenho (SIMAD) — IME, 2026.
 
 Modelagem e simulação de eventos discretos de um servidor web como uma fila M/M/1,
 comparando o comportamento do sistema sob baixa carga (ρ = 0,5) e alta carga (ρ = 0,9),
@@ -42,8 +42,7 @@ python3 graficos.py             # gera cdf_comparativo.png e metricas_comparativ
 ```
 
 Os resultados são **deterministicamente reprodutíveis**: as sementes aleatórias são
-geradas a partir de índices fixos (cenário, replicação), não de `hash()` de string —
-rodando o script quantas vezes for, os números batem exatamente com os do relatório.
+geradas a partir de índices fixos (cenário, replicação), rodando o script quantas vezes for, os números batem exatamente com os do relatório.
 
 ## Metodologia
 
@@ -52,18 +51,3 @@ rodando o script quantas vezes for, os números batem exatamente com os do relat
 - **Validação**: comparação direta com as fórmulas fechadas de Teoria das Filas (Kleinrock, 1975).
 - **Estatística**: 30 replicações independentes por cenário, 20.000s simulados cada,
   2.000s de warm-up descartados, médias com IC 95%.
-
-## Relatório completo
-
-Ver [`relatorio_fila_web.pdf`](./relatorio_fila_web.pdf) para a análise completa,
-incluindo descrição do sistema, modelagem matemática, validação, metodologia
-experimental e discussão crítica dos resultados.
-
-## Autores
-
-- Cap Eryan José Portes
-- Ten Arthur Bragança Siqueira de Souza
-- Luan Siviero Passos
-
-Trabalho orientado pela Major Gabriela Moutinho de Souza Dias, disciplina de
-Simulação e Análise de Desempenho, IME (2026).
